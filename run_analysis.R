@@ -6,6 +6,7 @@
 ##5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 library(data.table)
+library(reshape2)
 
 #activity labels
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
